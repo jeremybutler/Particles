@@ -18,6 +18,7 @@ Core = function()
 		
 	}
 	
+	// Starts the applications state and sets it to running. Default is limbo.
 	this.startApplication = function() {
 		var State = this.getHandler('StateHandler');
 		State.setState('Running');
