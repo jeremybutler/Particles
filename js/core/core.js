@@ -18,6 +18,11 @@ Core = function()
 		
 	}
 	
+	this.startApplication() {
+		var State = this.getHandler('StateHandler');
+		State.setState('Running');
+	}
+	
 	// Load classes that will be used in the core.
 	this.loadClasses = function() {
 		this.handler = new Handler();
