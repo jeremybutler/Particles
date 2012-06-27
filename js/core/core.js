@@ -18,7 +18,7 @@ Core = function()
 		
 	}
 	
-	this.startApplication() {
+	this.startApplication = function() {
 		var State = this.getHandler('StateHandler');
 		State.setState('Running');
 	}
