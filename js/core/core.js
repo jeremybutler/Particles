@@ -34,4 +34,14 @@ Core = function()
 		return this.handler.getHandle(handlerName);
 		
 	}
+	
+	// Register interaction
+	this.registerInteraction = function() {
+		// Create a click handler
+	}
+	
+	// Add event Listeners to the document
+	this.addEventListeners = function() {
+		// Add an event listener handler.
+	}
 }
