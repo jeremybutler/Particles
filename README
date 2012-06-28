@@ -4,4 +4,10 @@ Company: Atomic Bucket
 Version: 0.0.01
 Twitter: @_jonasson
 
-Project may turn into a game involving particles or it could turn into a particle engine. Haven't gotten far enough into the project to know because this is more for fun than anything else.
+Project is a shell that will allow rapid development of canvas based application in javascript.
+The project will allow dynamic resizing of the canvas and will allow for better handling of application states,
+views, errors etc.
+
+On the roadmap:
+I would like to include html nodes to the project to allow people to fully build their web applications client
+using this framework.
