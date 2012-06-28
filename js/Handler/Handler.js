@@ -11,10 +11,6 @@ Handler = function()
 		new Array('ErrorHandler', '')
 	);
 	
-	this.created = new Array(
-		
-	);
-	
 	// Create a new class so long as it is mapped in the handles[]
 	this.getHandle = function(handle) {
 		for(x in this.handles) {
