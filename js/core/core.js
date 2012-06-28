@@ -15,7 +15,6 @@ Core = function()
 			this.loadClasses();
 			this.loaded = true;
 		}
-		
 	}
 	
 	// Starts the applications state and sets it to running. Default is limbo.
