@@ -5,14 +5,23 @@
 Core = function()
 {
 	this.context 	= null;
+	this.settings	= null;
 	this.loaded 	= false;
 	this.handler	= null;
 	
 	this.appLoader = function() {
+		
+		// Load the handler
+		this.loadClasses();
+		
+		// Add a canvas to the screen.
+		var canvas = '<canvas id="canvas" width="'+this.settings.applicationWidth+'" height="'+this.settings.applicationHeight+'"></canvas>';
+		document.getElementsByTagName('body')[0].innerHTML = canvas;
+	
 		// Create the base components that the application will run on.
 		this.context = document.getElementById('canvas').getContext('2d');
 		if(this.context) {
-			this.loadClasses();
+			
 			this.loaded = true;
 		}
 	}
@@ -26,6 +35,7 @@ Core = function()
 	// Load classes that will be used in the core.
 	this.loadClasses = function() {
 		this.handler = new Handler();
+		this.settings = new Settings();
 	}
 	
 	// Get Handlers

@@ -8,6 +8,8 @@ function onLoad() {
 	if(core.loaded) {
 		log("Core has loaded successfully.");
 	}
+	
+	// Create a canvas.
 }
 
 function log(content) {
