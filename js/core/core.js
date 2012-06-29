@@ -9,6 +9,9 @@ Core = function()
 	this.loaded 	= false;
 	this.handler	= null;
 	
+	/**
+	 * Method will load the required objects, handlers and create the canvas.
+	 */
 	this.appLoader = function() {
 		
 		// Load the handler
@@ -26,10 +29,19 @@ Core = function()
 		}
 	}
 	
-	// Starts the applications state and sets it to running. Default is limbo.
-	this.startApplication = function() {
+	/**
+	 * start is going to start the applications cycle. 
+	 */
+	this.start()
+	{
 		var State = this.getHandler('StateHandler');
 		State.setState('Running');
+		
+		/*
+		 * Continue coding from here.
+		 * application should hit the runner class and begin the game cycle.
+		 * if application is not a game then it should load the rest of the ui components.
+		 */
 	}
 	
 	// Load classes that will be used in the core.
