@@ -9,7 +9,14 @@ function onLoad() {
 		log("Core has loaded successfully.");
 	}
 	
-	// Create a canvas.
+	// Call core to start the application
+	core.start();
+	
+	/*
+	 * No further actions should take place in this file.
+	 * On load should call on core and begin the application
+	 * 
+	 */
 }
 
 function log(content) {
